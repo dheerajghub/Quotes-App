@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct DefaultView: View {
+    
+    // MARK: PROPERTIES -
+    
+    var title: String = "Nothing on list"
+    
+    // MARK: BODY -
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(title)
+            .font(.custom(Constants.fontRegular, size: 20))
+            .foregroundColor(.gray)
+            .padding(.top , 100)
     }
 }
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PlayfairDisplay-Black.otf</string>
+		<string>PlayfairDisplay-BlackItalic.otf</string>
+		<string>PlayfairDisplay-Bold.otf</string>
+		<string>PlayfairDisplay-BoldItalic.otf</string>
+		<string>PlayfairDisplay-Italic.otf</string>
+		<string>PlayfairDisplay-Regular.otf</string>
+	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIImageName</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>
