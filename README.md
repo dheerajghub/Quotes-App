@@ -10,6 +10,8 @@ My motivation behind this app is to able learn and able to taught you guys, how 
 
 ## Progress Glance
 
+<img src="https://imgur.com/OZ7hPb5.png" height="600">
+<img src="https://imgur.com/HbLfIku.png" height="600"> <img src="https://imgur.com/lPFpZ60.png" height="600">
 <img src="https://imgur.com/XwP9Hta.png" height="600"> <img src="https://imgur.com/akAkZIB.png" height="600">
 <img src="https://imgur.com/OeokM0U.png" height="600"> <img src="https://imgur.com/O8g35Xd.png" height="600">
 <img src="https://imgur.com/MilmPlZ.png" height="600"> <img src="https://imgur.com/jGG1CQF.png" height="600">
