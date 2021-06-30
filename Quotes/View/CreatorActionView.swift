@@ -12,7 +12,7 @@ struct CreatorActionView: View {
     // MARK: PROPERTIES -
     
     @Binding var backgroundColor: Color
-    @Binding var textColor: Color
+    @Binding var fontColor: Color
     @Binding var fontSize: CGFloat
     
     @State private var data = [ActionViewData]()
@@ -56,27 +56,34 @@ struct CreatorActionView: View {
             }
             
             if !hideFontView {
-                FontView()
+                FontView(hideFontView: $hideFontView)
             }
             
             if !hideFontSizeView {
-                FontSizeView()
+                FontSizeView(fontSize: $fontSize, hideFontSizeView: $hideFontSizeView)
             }
             
             if !hideFontColorView {
-                FontColorView()
+                FontColorView(fontColor: $fontColor, hideFontColorView: $hideFontColorView)
             }
             
         }
         .onAppear {
-            data = [
-                ActionViewData(type: "color", image: nil , text: "", color: backgroundColor, title: "BG Color" , toggleView: "PostBackgroundColorView"),
-                ActionViewData(type: "text", image: nil , text: "A", color: nil, title: "Font", toggleView: "FontView"),
-                ActionViewData(type: "color", image: nil , text: "", color: textColor, title: "Font Color" , toggleView: "FontColorView"),
-                ActionViewData(type: "text", image: nil , text: "13", color: nil, title: "Font Size" , toggleView: "FontSizeView")
-            ]
+            setData()
         }
     }
+    
+    // MARK: FUNCTIONS -
+    
+    func setData(){
+        data = [
+            ActionViewData(type: "color", image: nil , text: "", color: backgroundColor, title: "BG Color" , toggleView: "PostBackgroundColorView"),
+            ActionViewData(type: "color", image: nil , text: "", color: fontColor, title: "Font Color" , toggleView: "FontColorView"),
+            ActionViewData(type: "text", image: nil , text: "\(fontSize)", color: nil, title: "Font Size" , toggleView: "FontSizeView"),
+            ActionViewData(type: "text", image: nil , text: "A", color: nil, title: "Font", toggleView: "FontView"),
+        ]
+    }
+    
 }
 
 //struct CreatorActionView_Previews: PreviewProvider {

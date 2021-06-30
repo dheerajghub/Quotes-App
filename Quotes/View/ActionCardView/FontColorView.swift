@@ -8,13 +8,68 @@
 import SwiftUI
 
 struct FontColorView: View {
+    
+    // MARK: PROPERTIES -
+    
+    @Environment(\.colorScheme) var colorScheme
+    
+    @Binding var fontColor: Color
+    @Binding var hideFontColorView: Bool
+    
+    let colors: [Color] = [.black , .white , .blue , .yellow , .pink , .red]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .topTrailing){
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .center, spacing: 10) {
+                    ForEach(colors , id: \.self){ color in
+                        Button {
+                            fontColor = color
+                        } label: {
+                            VStack {
+                                color
+                                    .frame(width: 70, height: 70)
+                                    .cornerRadius(35)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 35)
+                                            .stroke(.white , lineWidth: 2)
+                                    )
+                                    .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 5)
+                                Rectangle()
+                                    .fill(colorScheme == .dark ? (fontColor == color ? .white : .black ) : (fontColor == color ? .black : .white ))
+                                    .frame(width: fontColor == color ? 10 : 5 , height: 5)
+                                    .cornerRadius(2.5)
+                                    .animation(.easeInOut)
+                            }//: VSTACK
+                        }
+                    }
+                }//: HSTACK
+                .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
+                .frame(height: 100)
+            } //: SCROLLVIEW
+            .frame(maxHeight: .infinity)
+            
+            Button {
+                hideFontColorView = true
+            } label: {
+                Image("close")
+                    .resizable()
+                    .renderingMode(.template)
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(colorScheme == .dark ? .white : .black)
+                    .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+                    .background(Constants.appSecondary)
+                    .cornerRadius(20)
+            }
+            .padding(.trailing , 5)
+        }
+        .frame(maxHeight: .infinity)
+        .background(colorScheme == .dark ? Color.black : Color.white)
     }
 }
 
-struct FontColorView_Previews: PreviewProvider {
-    static var previews: some View {
-        FontColorView()
-    }
-}
+//struct FontColorView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FontColorView()
+//    }
+//}

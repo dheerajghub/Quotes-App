@@ -22,7 +22,6 @@ struct CreatorsView: View {
     @State var i = 0
     @State var fontColor: Color = .white
     @State var backgroundColor: Color = .black
-    @State var textColor: Color = .white
     @State var fontSize: CGFloat = 20
     
     init(quoteContent: String){
@@ -85,7 +84,7 @@ struct CreatorsView: View {
                 .background(Color.white)
                 
                 // ACTION VIEW
-                CreatorActionView(backgroundColor: $backgroundColor, textColor: $textColor , fontSize: $fontSize)
+                CreatorActionView(backgroundColor: $backgroundColor, fontColor: $fontColor , fontSize: $fontSize)
                 
                 Spacer()
             } //: VSTACK
