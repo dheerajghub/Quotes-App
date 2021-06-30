@@ -48,6 +48,15 @@
 		447973AA268B3F6300CF78FC /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447973A9268B3F6300CF78FC /* QuotesViewModel.swift */; };
 		447973AC268B3F7700CF78FC /* TagsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447973AB268B3F7700CF78FC /* TagsViewModel.swift */; };
 		447973AE268B3F9600CF78FC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 447973AD268B3F9600CF78FC /* Launch Screen.storyboard */; };
+		44B1DA8E268C01B0009101E6 /* CreateActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DA8D268C01B0009101E6 /* CreateActionView.swift */; };
+		44B1DA90268C05CC009101E6 /* CreatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DA8F268C05CC009101E6 /* CreatorsView.swift */; };
+		44B1DA94268C43F2009101E6 /* CreatorActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DA93268C43F2009101E6 /* CreatorActionView.swift */; };
+		44B1DA96268C460A009101E6 /* ActionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DA95268C460A009101E6 /* ActionCardView.swift */; };
+		44B1DA98268C5702009101E6 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DA97268C5702009101E6 /* Structure.swift */; };
+		44B1DA9B268C6113009101E6 /* PostBackgroundColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DA9A268C6113009101E6 /* PostBackgroundColorView.swift */; };
+		44B1DA9D268C6490009101E6 /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DA9C268C6490009101E6 /* FontView.swift */; };
+		44B1DA9F268C6499009101E6 /* FontColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DA9E268C6499009101E6 /* FontColorView.swift */; };
+		44B1DAA1268C64A3009101E6 /* FontSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DAA0268C64A3009101E6 /* FontSizeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +102,15 @@
 		447973AB268B3F7700CF78FC /* TagsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsViewModel.swift; sourceTree = "<group>"; };
 		447973AD268B3F9600CF78FC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		447973B6268B421C00CF78FC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44B1DA8D268C01B0009101E6 /* CreateActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateActionView.swift; sourceTree = "<group>"; };
+		44B1DA8F268C05CC009101E6 /* CreatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsView.swift; sourceTree = "<group>"; };
+		44B1DA93268C43F2009101E6 /* CreatorActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorActionView.swift; sourceTree = "<group>"; };
+		44B1DA95268C460A009101E6 /* ActionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCardView.swift; sourceTree = "<group>"; };
+		44B1DA97268C5702009101E6 /* Structure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
+		44B1DA9A268C6113009101E6 /* PostBackgroundColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBackgroundColorView.swift; sourceTree = "<group>"; };
+		44B1DA9C268C6490009101E6 /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
+		44B1DA9E268C6499009101E6 /* FontColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontColorView.swift; sourceTree = "<group>"; };
+		44B1DAA0268C64A3009101E6 /* FontSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeView.swift; sourceTree = "<group>"; };
 		664A533544D175C8ADCE3FBF /* Pods-Quotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotes.debug.xcconfig"; path = "Target Support Files/Pods-Quotes/Pods-Quotes.debug.xcconfig"; sourceTree = "<group>"; };
 		B90C7208E9902A723013282B /* Pods-Quotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotes.release.xcconfig"; path = "Target Support Files/Pods-Quotes/Pods-Quotes.release.xcconfig"; sourceTree = "<group>"; };
 		F4D962360FB9B3319DAC8DCE /* Pods_Quotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,9 +201,11 @@
 		4479735D268B3BEA00CF78FC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44B1DA99268C60F7009101E6 /* ActionCardView */,
 				4479738C268B3DF400CF78FC /* AuthorInfoView.swift */,
 				4479738E268B3E0900CF78FC /* AuthorNameView.swift */,
 				44797390268B3E1D00CF78FC /* CopyActionView.swift */,
+				44B1DA8D268C01B0009101E6 /* CreateActionView.swift */,
 				44797392268B3E3400CF78FC /* CustomTitleView.swift */,
 				44797394268B3E4F00CF78FC /* FavoriteActionView.swift */,
 				44797396268B3E6600CF78FC /* InfoCardView.swift */,
@@ -195,6 +215,8 @@
 				4479739E268B3ECC00CF78FC /* ExploreAuthorCardView.swift */,
 				447973A0268B3EE300CF78FC /* TagCardView.swift */,
 				447973A2268B3EFA00CF78FC /* DefaultView.swift */,
+				44B1DA93268C43F2009101E6 /* CreatorActionView.swift */,
+				44B1DA95268C460A009101E6 /* ActionCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				44797381268B3D4800CF78FC /* Constants.swift */,
+				44B1DA97268C5702009101E6 /* Structure.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -231,6 +254,7 @@
 				4479737B268B3CFC00CF78FC /* HomeView.swift */,
 				4479737D268B3D1800CF78FC /* QuoteDetailView.swift */,
 				4479737F268B3D3100CF78FC /* TagFilteredQuoteListView.swift */,
+				44B1DA8F268C05CC009101E6 /* CreatorsView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -270,6 +294,17 @@
 				447973A5268B3F3700CF78FC /* QuotesRealmViewModel.swift */,
 			);
 			path = RealmViewModel;
+			sourceTree = "<group>";
+		};
+		44B1DA99268C60F7009101E6 /* ActionCardView */ = {
+			isa = PBXGroup;
+			children = (
+				44B1DA9A268C6113009101E6 /* PostBackgroundColorView.swift */,
+				44B1DA9C268C6490009101E6 /* FontView.swift */,
+				44B1DA9E268C6499009101E6 /* FontColorView.swift */,
+				44B1DAA0268C64A3009101E6 /* FontSizeView.swift */,
+			);
+			path = ActionCardView;
 			sourceTree = "<group>";
 		};
 		DCC8B42149BAF8E59E8BCE85 /* Pods */ = {
@@ -406,20 +441,26 @@
 				4479738F268B3E0900CF78FC /* AuthorNameView.swift in Sources */,
 				447973A8268B3F5000CF78FC /* AuthorsViewModel.swift in Sources */,
 				44797382268B3D4800CF78FC /* Constants.swift in Sources */,
+				44B1DA96268C460A009101E6 /* ActionCardView.swift in Sources */,
 				44797399268B3E8200CF78FC /* QuoteCardView.swift in Sources */,
 				44797376268B3CB500CF78FC /* ExploreAuthorListView.swift in Sources */,
 				4479738B268B3DBA00CF78FC /* TagsModel.swift in Sources */,
 				4479739D268B3EB300CF78FC /* QuoteTagsView.swift in Sources */,
+				44B1DA9B268C6113009101E6 /* PostBackgroundColorView.swift in Sources */,
+				44B1DAA1268C64A3009101E6 /* FontSizeView.swift in Sources */,
 				44797370268B3C5200CF78FC /* AuthorDetailView.swift in Sources */,
 				4479739F268B3ECC00CF78FC /* ExploreAuthorCardView.swift in Sources */,
+				44B1DA98268C5702009101E6 /* Structure.swift in Sources */,
 				4479734E268B3B4A00CF78FC /* QuotesApp.swift in Sources */,
 				44797372268B3C7100CF78FC /* AuthorQuoteListView.swift in Sources */,
+				44B1DA9F268C6499009101E6 /* FontColorView.swift in Sources */,
 				447973A6268B3F3700CF78FC /* QuotesRealmViewModel.swift in Sources */,
 				447973AA268B3F6300CF78FC /* QuotesViewModel.swift in Sources */,
 				44797395268B3E4F00CF78FC /* FavoriteActionView.swift in Sources */,
 				44797389268B3D9E00CF78FC /* QuotesModel.swift in Sources */,
 				44797397268B3E6600CF78FC /* InfoCardView.swift in Sources */,
 				447973A3268B3EFA00CF78FC /* DefaultView.swift in Sources */,
+				44B1DA9D268C6490009101E6 /* FontView.swift in Sources */,
 				4479739B268B3E9A00CF78FC /* QuoteDetailCardView.swift in Sources */,
 				447973A1268B3EE300CF78FC /* TagCardView.swift in Sources */,
 				44797391268B3E1D00CF78FC /* CopyActionView.swift in Sources */,
@@ -429,9 +470,12 @@
 				44797385268B3D7600CF78FC /* QuotesDB.swift in Sources */,
 				4479737A268B3CE800CF78FC /* FavouriteView.swift in Sources */,
 				44797374268B3C8F00CF78FC /* CustomTabView.swift in Sources */,
+				44B1DA94268C43F2009101E6 /* CreatorActionView.swift in Sources */,
 				447973AC268B3F7700CF78FC /* TagsViewModel.swift in Sources */,
 				44797393268B3E3400CF78FC /* CustomTitleView.swift in Sources */,
 				44797380268B3D3100CF78FC /* TagFilteredQuoteListView.swift in Sources */,
+				44B1DA8E268C01B0009101E6 /* CreateActionView.swift in Sources */,
+				44B1DA90268C05CC009101E6 /* CreatorsView.swift in Sources */,
 				44797387268B3D8C00CF78FC /* AuthorsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,8 +620,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -613,8 +657,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -14,6 +14,7 @@ struct Constants {
     static let appSecondary = Color.gray.opacity(0.1)
     static let appPrimary = Color.black.opacity(0.9)
     static let appGreen = Color(red: 0, green: 217/255, blue: 25/255)
+    static let appBlue = Color(red: 49/255, green: 172/255, blue: 247/255)
     
     ///  API urls
     static let base_url = "https://api.quotable.io"
