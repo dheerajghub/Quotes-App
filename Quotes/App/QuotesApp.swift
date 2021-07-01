@@ -17,6 +17,11 @@ struct QuotesApp: SwiftUI.App {
                 .environment(\.realmConfiguration, Realm.Configuration())
                 .onAppear {
                     print(Realm.Configuration.defaultConfiguration.fileURL)
+                    
+                    for family in UIFont.familyNames.sorted() {
+                        let names = UIFont.fontNames(forFamilyName: family)
+                        print("Family: \(family) Font names: \(names)")
+                    }
                 }
         }
     }

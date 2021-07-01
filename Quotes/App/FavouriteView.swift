@@ -27,6 +27,7 @@ struct FavouriteView: View {
     
     @State var showingCreatorView: Bool = false
     @State var quoteToSend: String = ""
+    @State var quoteToSendAuthor: String = ""
     
     // MARK: BODY -
     
@@ -77,6 +78,7 @@ struct FavouriteView: View {
                                                 withAnimation(Animation.spring()) {
                                                     if cardOffset.width > 95 {
                                                         quoteToSend = quote.content
+                                                        quoteToSendAuthor = quote.author
                                                         showingCreatorView.toggle()
                                                     }
                                                     if cardOffset.width < -95 {
@@ -105,7 +107,7 @@ struct FavouriteView: View {
             .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
         } //: SCROLLVIEW
         .fullScreenCover(isPresented: $showingCreatorView) {
-            CreatorsView(quoteContent: quoteToSend)
+            CreatorsView(quoteContent: quoteToSend, quoteAuthor: quoteToSendAuthor)
         }
     }
 }

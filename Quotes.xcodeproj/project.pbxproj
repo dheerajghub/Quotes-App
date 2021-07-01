@@ -57,6 +57,16 @@
 		44B1DA9D268C6490009101E6 /* FontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DA9C268C6490009101E6 /* FontView.swift */; };
 		44B1DA9F268C6499009101E6 /* FontColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DA9E268C6499009101E6 /* FontColorView.swift */; };
 		44B1DAA1268C64A3009101E6 /* FontSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DAA0268C64A3009101E6 /* FontSizeView.swift */; };
+		44B1DAA5268D6AD0009101E6 /* Garamond Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44B1DAA4268D6AD0009101E6 /* Garamond Roman.ttf */; };
+		44B1DAA7268D6C47009101E6 /* Vollkorn-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44B1DAA6268D6C47009101E6 /* Vollkorn-Italic.ttf */; };
+		44B1DAA9268D7080009101E6 /* Freight Sans Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44B1DAA8268D7080009101E6 /* Freight Sans Book.otf */; };
+		44B1DAAC268D87F2009101E6 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44B1DAAA268D87F2009101E6 /* Montserrat-Regular.otf */; };
+		44B1DAAD268D87F2009101E6 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44B1DAAB268D87F2009101E6 /* Gotham-Light.otf */; };
+		44B1DAAF268D9042009101E6 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44B1DAAE268D9042009101E6 /* DancingScript-VariableFont_wght.ttf */; };
+		44B1DAB1268D97AA009101E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DAB0268D97AA009101E6 /* Extensions.swift */; };
+		44B1DAB3268DA1CA009101E6 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44B1DAB2268DA1CA009101E6 /* OpenSans-Regular.ttf */; };
+		44B1DAB5268DA29F009101E6 /* times new roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44B1DAB4268DA29F009101E6 /* times new roman.ttf */; };
+		44B1DAB7268DD2BB009101E6 /* CustomAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DAB6268DD2BB009101E6 /* CustomAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +121,16 @@
 		44B1DA9C268C6490009101E6 /* FontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontView.swift; sourceTree = "<group>"; };
 		44B1DA9E268C6499009101E6 /* FontColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontColorView.swift; sourceTree = "<group>"; };
 		44B1DAA0268C64A3009101E6 /* FontSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeView.swift; sourceTree = "<group>"; };
+		44B1DAA4268D6AD0009101E6 /* Garamond Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Garamond Roman.ttf"; sourceTree = "<group>"; };
+		44B1DAA6268D6C47009101E6 /* Vollkorn-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-Italic.ttf"; sourceTree = "<group>"; };
+		44B1DAA8268D7080009101E6 /* Freight Sans Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freight Sans Book.otf"; sourceTree = "<group>"; };
+		44B1DAAA268D87F2009101E6 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		44B1DAAB268D87F2009101E6 /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		44B1DAAE268D9042009101E6 /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		44B1DAB0268D97AA009101E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		44B1DAB2268DA1CA009101E6 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		44B1DAB4268DA29F009101E6 /* times new roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "times new roman.ttf"; sourceTree = "<group>"; };
+		44B1DAB6268DD2BB009101E6 /* CustomAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationView.swift; sourceTree = "<group>"; };
 		664A533544D175C8ADCE3FBF /* Pods-Quotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotes.debug.xcconfig"; path = "Target Support Files/Pods-Quotes/Pods-Quotes.debug.xcconfig"; sourceTree = "<group>"; };
 		B90C7208E9902A723013282B /* Pods-Quotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotes.release.xcconfig"; path = "Target Support Files/Pods-Quotes/Pods-Quotes.release.xcconfig"; sourceTree = "<group>"; };
 		F4D962360FB9B3319DAC8DCE /* Pods_Quotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +237,7 @@
 				447973A2268B3EFA00CF78FC /* DefaultView.swift */,
 				44B1DA93268C43F2009101E6 /* CreatorActionView.swift */,
 				44B1DA95268C460A009101E6 /* ActionCardView.swift */,
+				44B1DAB6268DD2BB009101E6 /* CustomAnimationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,6 +258,7 @@
 			children = (
 				44797381268B3D4800CF78FC /* Constants.swift */,
 				44B1DA97268C5702009101E6 /* Structure.swift */,
+				44B1DAB0268D97AA009101E6 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -270,7 +292,15 @@
 		44797362268B3C1000CF78FC /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				44B1DAA4268D6AD0009101E6 /* Garamond Roman.ttf */,
+				44B1DAA8268D7080009101E6 /* Freight Sans Book.otf */,
+				44B1DAAE268D9042009101E6 /* DancingScript-VariableFont_wght.ttf */,
+				44B1DAB2268DA1CA009101E6 /* OpenSans-Regular.ttf */,
+				44B1DAAB268D87F2009101E6 /* Gotham-Light.otf */,
+				44B1DAB4268DA29F009101E6 /* times new roman.ttf */,
+				44B1DAAA268D87F2009101E6 /* Montserrat-Regular.otf */,
 				44797366268B3C1A00CF78FC /* PlayfairDisplay-Black.otf */,
+				44B1DAA6268D6C47009101E6 /* Vollkorn-Italic.ttf */,
 				44797368268B3C1A00CF78FC /* PlayfairDisplay-BlackItalic.otf */,
 				44797365268B3C1A00CF78FC /* PlayfairDisplay-Bold.otf */,
 				44797363268B3C1900CF78FC /* PlayfairDisplay-BoldItalic.otf */,
@@ -378,11 +408,19 @@
 			files = (
 				4479736B268B3C2000CF78FC /* PlayfairDisplay-Italic.otf in Resources */,
 				44797355268B3B4C00CF78FC /* Preview Assets.xcassets in Resources */,
+				44B1DAB5268DA29F009101E6 /* times new roman.ttf in Resources */,
 				44797352268B3B4C00CF78FC /* Assets.xcassets in Resources */,
+				44B1DAAF268D9042009101E6 /* DancingScript-VariableFont_wght.ttf in Resources */,
+				44B1DAA9268D7080009101E6 /* Freight Sans Book.otf in Resources */,
 				447973AE268B3F9600CF78FC /* Launch Screen.storyboard in Resources */,
+				44B1DAB3268DA1CA009101E6 /* OpenSans-Regular.ttf in Resources */,
+				44B1DAAC268D87F2009101E6 /* Montserrat-Regular.otf in Resources */,
+				44B1DAA5268D6AD0009101E6 /* Garamond Roman.ttf in Resources */,
 				4479736D268B3C2000CF78FC /* PlayfairDisplay-Bold.otf in Resources */,
 				4479736E268B3C2000CF78FC /* PlayfairDisplay-BlackItalic.otf in Resources */,
 				44797369268B3C2000CF78FC /* PlayfairDisplay-Black.otf in Resources */,
+				44B1DAAD268D87F2009101E6 /* Gotham-Light.otf in Resources */,
+				44B1DAA7268D6C47009101E6 /* Vollkorn-Italic.ttf in Resources */,
 				4479736A268B3C2000CF78FC /* PlayfairDisplay-BoldItalic.otf in Resources */,
 				4479736C268B3C2000CF78FC /* PlayfairDisplay-Regular.otf in Resources */,
 			);
@@ -443,6 +481,7 @@
 				44797382268B3D4800CF78FC /* Constants.swift in Sources */,
 				44B1DA96268C460A009101E6 /* ActionCardView.swift in Sources */,
 				44797399268B3E8200CF78FC /* QuoteCardView.swift in Sources */,
+				44B1DAB7268DD2BB009101E6 /* CustomAnimationView.swift in Sources */,
 				44797376268B3CB500CF78FC /* ExploreAuthorListView.swift in Sources */,
 				4479738B268B3DBA00CF78FC /* TagsModel.swift in Sources */,
 				4479739D268B3EB300CF78FC /* QuoteTagsView.swift in Sources */,
@@ -461,6 +500,7 @@
 				44797397268B3E6600CF78FC /* InfoCardView.swift in Sources */,
 				447973A3268B3EFA00CF78FC /* DefaultView.swift in Sources */,
 				44B1DA9D268C6490009101E6 /* FontView.swift in Sources */,
+				44B1DAB1268D97AA009101E6 /* Extensions.swift in Sources */,
 				4479739B268B3E9A00CF78FC /* QuoteDetailCardView.swift in Sources */,
 				447973A1268B3EE300CF78FC /* TagCardView.swift in Sources */,
 				44797391268B3E1D00CF78FC /* CopyActionView.swift in Sources */,

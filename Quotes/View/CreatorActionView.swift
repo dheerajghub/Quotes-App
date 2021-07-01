@@ -14,6 +14,7 @@ struct CreatorActionView: View {
     @Binding var backgroundColor: Color
     @Binding var fontColor: Color
     @Binding var fontSize: CGFloat
+    @Binding var fontName: String
     
     @State private var data = [ActionViewData]()
     @State var hidePostBGColorView: Bool = true
@@ -56,7 +57,7 @@ struct CreatorActionView: View {
             }
             
             if !hideFontView {
-                FontView(hideFontView: $hideFontView)
+                FontView(fontName: $fontName, hideFontView: $hideFontView)
             }
             
             if !hideFontSizeView {
@@ -80,7 +81,7 @@ struct CreatorActionView: View {
             ActionViewData(type: "color", image: nil , text: "", color: backgroundColor, title: "BG Color" , toggleView: "PostBackgroundColorView"),
             ActionViewData(type: "color", image: nil , text: "", color: fontColor, title: "Font Color" , toggleView: "FontColorView"),
             ActionViewData(type: "text", image: nil , text: "\(fontSize)", color: nil, title: "Font Size" , toggleView: "FontSizeView"),
-            ActionViewData(type: "text", image: nil , text: "A", color: nil, title: "Font", toggleView: "FontView"),
+            ActionViewData(type: "text", image: nil , text: "Ag", color: nil, title: "Font", toggleView: "FontView"),
         ]
     }
     

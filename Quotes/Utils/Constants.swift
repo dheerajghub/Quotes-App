@@ -33,4 +33,13 @@ struct Constants {
     static let fontBoldItalic = "PlayfairDisplay-BoldItalic"
     static let fontBlack = "PlayfairDisplay-Black"
     static let fontBlackItalic = "PlayfairDisplay-BlackItalic"
+    static let fontGothamLight = "Gotham-Light"
+    static let fontGaramondRoman = "Garamond-Roman"
+    static let fontVollkornItalic = "Vollkorn-Italic"
+    static let fontFreightSansBook = "Freight-SansBook"
+    static let fontMontserratRegular = "Montserrat-Regular"
+    static let fontDancingScriptRegular = "DancingScript-Regular"
+    static let fontOpenSansRegular  = "OpenSans-Regular"
+    static let fontTimesNewRoman = "TimesNewRomanPSMT"
+    
 }

@@ -2,10 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>App wants photos access.</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>OpenSans-Regular.ttf</string>
+		<string>DancingScript-VariableFont_wght.ttf</string>
+		<string>Montserrat-Regular.otf</string>
+		<string>Freight Sans Book.otf</string>
+		<string>Gotham-Light.otf</string>
+		<string>Vollkorn-Italic.ttf</string>
+		<string>Garamond Roman.ttf</string>
 		<string>PlayfairDisplay-Black.otf</string>
 		<string>PlayfairDisplay-BlackItalic.otf</string>
 		<string>PlayfairDisplay-Bold.otf</string>

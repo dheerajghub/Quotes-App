@@ -13,17 +13,45 @@ struct FontView: View {
     
     @Environment(\.colorScheme) var colorScheme
     
+    let fontArr = [Constants.fontRegular , Constants.fontGaramondRoman , Constants.fontFreightSansBook , Constants.fontVollkornItalic , Constants.fontGothamLight , Constants.fontMontserratRegular , Constants.fontDancingScriptRegular, Constants.fontOpenSansRegular, Constants.fontTimesNewRoman]
+    
+    @Binding var fontName: String
     @Binding var hideFontView: Bool
     
     // MARK: BODY -
     
     var body: some View {
         ZStack(alignment: .topTrailing){
-            HStack {
-                Text("Comming in next update!")
-                    .font(.custom(Constants.fontBold, size: 24))
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .center, spacing: 10) {
+                    ForEach(fontArr, id: \.self) { font in
+                        Button {
+                            fontName = font
+                        } label: {
+                            VStack {
+                                Text("Ag")
+                                    .font(.custom(font, size: 23))
+                                    .frame(width: 70, height: 70)
+                                    .background(Constants.appSecondary)
+                                    .multilineTextAlignment(.center)
+                                    .cornerRadius(35)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 35)
+                                            .stroke(Color.white , lineWidth: 2)
+                                    )
+                                Rectangle()
+                                    .fill(colorScheme == .dark ? (fontName == font ? .white : .black ) : (fontName == font ? .black : .white ))
+                                    .frame(width: fontName == font ? 10 : 5 , height: 5)
+                                    .cornerRadius(2.5)
+                                    .animation(.easeInOut)
+                            }//: VSTACK
+                        }
+                    }
+                }//: HSTACK
+                .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
+                .frame(height: 100)
+            }//: SCROLLVIEW
+            .frame(maxHeight: .infinity)
             
             Button {
                 hideFontView = true
