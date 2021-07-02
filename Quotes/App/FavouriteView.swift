@@ -36,7 +36,7 @@ struct FavouriteView: View {
             LazyVGrid(columns: gridItemLayout, spacing: 12) {
                 if let quotes = realmModel.quotes! {
                     if quotes.count > 0 {
-                        ForEach(realmModel.quotes!){ quote in
+                        ForEach(quotes){ quote in
                             ZStack {
                                 if isCreatingQuote == quote.quoteId {
                                     CreateActionView(creatingStateActive: $creatingStateActive, createViewScale: $createViewScale, createViewOpacity: $createViewOpacity)

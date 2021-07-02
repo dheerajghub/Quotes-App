@@ -15,6 +15,7 @@ struct FontSizeView: View {
     
     @Binding var fontSize: CGFloat
     @Binding var hideFontSizeView: Bool
+    @Binding var hideActionView: Bool
     
     // MARK: BODY -
     
@@ -23,12 +24,12 @@ struct FontSizeView: View {
             VStack {
                 Slider(value: $fontSize, in: 12...30)
                 Text("\(fontSize, specifier: "%.0f")")
-//                Text("\(fontSize)")
             } //: VSTACK
             .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
             .frame(maxHeight: .infinity)
             
             Button {
+                hideActionView = false
                 hideFontSizeView = true
             } label: {
                 Image("close")

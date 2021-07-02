@@ -41,5 +41,6 @@ struct Constants {
     static let fontDancingScriptRegular = "DancingScript-Regular"
     static let fontOpenSansRegular  = "OpenSans-Regular"
     static let fontTimesNewRoman = "TimesNewRomanPSMT"
-    
+    static let fontPoppinsRegular  = "Poppins-Regular"
+    static let fontNunitoRegular  = "Nunito-Regular"
 }

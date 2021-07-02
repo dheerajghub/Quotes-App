@@ -9,6 +9,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-Regular.ttf</string>
+		<string>Nunito-Regular.ttf</string>
+		<string>Poppins-Regular.ttf</string>
 		<string>DancingScript-VariableFont_wght.ttf</string>
 		<string>Montserrat-Regular.otf</string>
 		<string>Freight Sans Book.otf</string>

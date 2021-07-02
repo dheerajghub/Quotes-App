@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		155C062EDEAF0363DA921266 /* Pods_Quotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D962360FB9B3319DAC8DCE /* Pods_Quotes.framework */; };
+		4439E9B7268EA53C00E38EDA /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4439E9B6268EA53C00E38EDA /* Poppins-Regular.ttf */; };
+		4439E9B9268EA56300E38EDA /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4439E9B8268EA56300E38EDA /* Nunito-Regular.ttf */; };
 		4479734E268B3B4A00CF78FC /* QuotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479734D268B3B4A00CF78FC /* QuotesApp.swift */; };
 		44797352268B3B4C00CF78FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44797351268B3B4C00CF78FC /* Assets.xcassets */; };
 		44797355268B3B4C00CF78FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44797354268B3B4C00CF78FC /* Preview Assets.xcassets */; };
@@ -70,6 +72,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4439E9B6268EA53C00E38EDA /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		4439E9B8268EA56300E38EDA /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		4479734A268B3B4A00CF78FC /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4479734D268B3B4A00CF78FC /* QuotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesApp.swift; sourceTree = "<group>"; };
 		44797351268B3B4C00CF78FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -295,7 +299,9 @@
 				44B1DAA4268D6AD0009101E6 /* Garamond Roman.ttf */,
 				44B1DAA8268D7080009101E6 /* Freight Sans Book.otf */,
 				44B1DAAE268D9042009101E6 /* DancingScript-VariableFont_wght.ttf */,
+				4439E9B6268EA53C00E38EDA /* Poppins-Regular.ttf */,
 				44B1DAB2268DA1CA009101E6 /* OpenSans-Regular.ttf */,
+				4439E9B8268EA56300E38EDA /* Nunito-Regular.ttf */,
 				44B1DAAB268D87F2009101E6 /* Gotham-Light.otf */,
 				44B1DAB4268DA29F009101E6 /* times new roman.ttf */,
 				44B1DAAA268D87F2009101E6 /* Montserrat-Regular.otf */,
@@ -409,6 +415,8 @@
 				4479736B268B3C2000CF78FC /* PlayfairDisplay-Italic.otf in Resources */,
 				44797355268B3B4C00CF78FC /* Preview Assets.xcassets in Resources */,
 				44B1DAB5268DA29F009101E6 /* times new roman.ttf in Resources */,
+				4439E9B9268EA56300E38EDA /* Nunito-Regular.ttf in Resources */,
+				4439E9B7268EA53C00E38EDA /* Poppins-Regular.ttf in Resources */,
 				44797352268B3B4C00CF78FC /* Assets.xcassets in Resources */,
 				44B1DAAF268D9042009101E6 /* DancingScript-VariableFont_wght.ttf in Resources */,
 				44B1DAA9268D7080009101E6 /* Freight Sans Book.otf in Resources */,

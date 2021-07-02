@@ -15,6 +15,7 @@ struct PostBackgroundColorView: View {
     
     @Binding var backgroundColor: Color
     @Binding var hidePostBGColorView: Bool
+    @Binding var hideActionView: Bool
     
     let colors: [Color] = [.black , .red , .blue , .yellow , .pink ]
     
@@ -52,6 +53,7 @@ struct PostBackgroundColorView: View {
             .frame(maxHeight: .infinity)
             
             Button {
+                hideActionView = false
                 hidePostBGColorView = true
             } label: {
                 Image("close")

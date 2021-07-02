@@ -21,51 +21,61 @@ struct CreatorActionView: View {
     @State var hideFontView: Bool = true
     @State var hideFontColorView: Bool = true
     @State var hideFontSizeView: Bool = true
+    @State var hideActionView: Bool = false
     
     // MARK: BODY -
     
     var body: some View {
         ZStack {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(alignment: .center, spacing: 10) {
-                    ForEach(data){ item in
-                        Button {
-                            if item.toggleView == "PostBackgroundColorView" {
-                                hidePostBGColorView.toggle()
+            if !hideActionView {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .center, spacing: 10) {
+                        ForEach(data){ item in
+                            Button {
+                                if item.toggleView == "PostBackgroundColorView" {
+                                    hidePostBGColorView.toggle()
+                                    hideActionView.toggle()
+                                }
+                                if item.toggleView == "FontView" {
+                                    hideFontView.toggle()
+                                    hideActionView.toggle()
+                                }
+                                if item.toggleView == "FontSizeView" {
+                                    hideFontSizeView.toggle()
+                                    hideActionView.toggle()
+                                }
+                                if item.toggleView == "FontColorView" {
+                                    hideFontColorView.toggle()
+                                    hideActionView.toggle()
+                                }
+                            } label: {
+                                ActionCardView(data: item)
+                                    .frame(width: 90, height: 130)
                             }
-                            if item.toggleView == "FontView" {
-                                hideFontView.toggle()
-                            }
-                            if item.toggleView == "FontSizeView" {
-                                hideFontSizeView.toggle()
-                            }
-                            if item.toggleView == "FontColorView" {
-                                hideFontColorView.toggle()
-                            }
-                        } label: {
-                            ActionCardView(data: item)
-                                .frame(width: 90, height: 130)
                         }
                     }
+                    .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
                 }
-                .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
+                .frame(maxHeight: .infinity)
+                .onAppear {
+                    setData()
+                }
             }
-            .frame(maxHeight: .infinity)
-    
+            
             if !hidePostBGColorView {
-                PostBackgroundColorView(backgroundColor: $backgroundColor, hidePostBGColorView: $hidePostBGColorView)
+                PostBackgroundColorView(backgroundColor: $backgroundColor, hidePostBGColorView: $hidePostBGColorView , hideActionView: $hideActionView)
             }
             
             if !hideFontView {
-                FontView(fontName: $fontName, hideFontView: $hideFontView)
+                FontView(fontName: $fontName, hideFontView: $hideFontView , hideActionView: $hideActionView)
             }
             
             if !hideFontSizeView {
-                FontSizeView(fontSize: $fontSize, hideFontSizeView: $hideFontSizeView)
+                FontSizeView(fontSize: $fontSize, hideFontSizeView: $hideFontSizeView , hideActionView: $hideActionView)
             }
             
             if !hideFontColorView {
-                FontColorView(fontColor: $fontColor, hideFontColorView: $hideFontColorView)
+                FontColorView(fontColor: $fontColor, hideFontColorView: $hideFontColorView , hideActionView: $hideActionView)
             }
             
         }
@@ -80,11 +90,10 @@ struct CreatorActionView: View {
         data = [
             ActionViewData(type: "color", image: nil , text: "", color: backgroundColor, title: "BG Color" , toggleView: "PostBackgroundColorView"),
             ActionViewData(type: "color", image: nil , text: "", color: fontColor, title: "Font Color" , toggleView: "FontColorView"),
-            ActionViewData(type: "text", image: nil , text: "\(fontSize)", color: nil, title: "Font Size" , toggleView: "FontSizeView"),
+            ActionViewData(type: "text", image: nil , text: "\(Int(fontSize))", color: nil, title: "Font Size" , toggleView: "FontSizeView"),
             ActionViewData(type: "text", image: nil , text: "Ag", color: nil, title: "Font", toggleView: "FontView"),
         ]
     }
-    
 }
 
 //struct CreatorActionView_Previews: PreviewProvider {

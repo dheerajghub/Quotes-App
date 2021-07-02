@@ -15,6 +15,7 @@ struct FontColorView: View {
     
     @Binding var fontColor: Color
     @Binding var hideFontColorView: Bool
+    @Binding var hideActionView: Bool
     
     let colors: [Color] = [.black , .white , .blue , .yellow , .pink , .red]
     
@@ -50,6 +51,7 @@ struct FontColorView: View {
             .frame(maxHeight: .infinity)
             
             Button {
+                hideActionView = false
                 hideFontColorView = true
             } label: {
                 Image("close")

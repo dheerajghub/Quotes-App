@@ -13,10 +13,11 @@ struct FontView: View {
     
     @Environment(\.colorScheme) var colorScheme
     
-    let fontArr = [Constants.fontRegular , Constants.fontGaramondRoman , Constants.fontFreightSansBook , Constants.fontVollkornItalic , Constants.fontGothamLight , Constants.fontMontserratRegular , Constants.fontDancingScriptRegular, Constants.fontOpenSansRegular, Constants.fontTimesNewRoman]
+    let fontArr = [Constants.fontRegular , Constants.fontGaramondRoman , Constants.fontFreightSansBook , Constants.fontVollkornItalic , Constants.fontGothamLight , Constants.fontMontserratRegular , Constants.fontDancingScriptRegular, Constants.fontOpenSansRegular, Constants.fontTimesNewRoman , Constants.fontPoppinsRegular , Constants.fontNunitoRegular]
     
     @Binding var fontName: String
     @Binding var hideFontView: Bool
+    @Binding var hideActionView: Bool
     
     // MARK: BODY -
     
@@ -54,6 +55,7 @@ struct FontView: View {
             .frame(maxHeight: .infinity)
             
             Button {
+                hideActionView = false
                 hideFontView = true
             } label: {
                 Image("close")
