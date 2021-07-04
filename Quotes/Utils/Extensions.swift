@@ -14,7 +14,7 @@ extension View {
 
         let targetSize = controller.view.intrinsicContentSize
         view?.bounds = CGRect(origin: .zero, size: targetSize)
-        view?.backgroundColor = .red
+        view?.backgroundColor = .black
 
         let renderer = UIGraphicsImageRenderer(size: targetSize)
 

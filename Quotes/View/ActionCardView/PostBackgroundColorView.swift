@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PostBackgroundColorView: View {
     
-    // MARK: PROPERTIE -
+    // MARK: PROPERTIES -
     
     @Environment(\.colorScheme) var colorScheme
     
@@ -17,7 +17,21 @@ struct PostBackgroundColorView: View {
     @Binding var hidePostBGColorView: Bool
     @Binding var hideActionView: Bool
     
-    let colors: [Color] = [.black , .red , .blue , .yellow , .pink ]
+    let colors: [Color] = [
+        Color.white,
+        Color.black,
+        Color.yellow,
+        Color.red,
+        Constants.appColor1,
+        Constants.appColor2,
+        Constants.appColor3,
+        Constants.appColor4,
+        Constants.appColor5,
+        Constants.appColor6,
+        Constants.appColor7,
+        Constants.appColor8,
+        Constants.appColor9
+    ]
     
     // MARK: BODY -
     
