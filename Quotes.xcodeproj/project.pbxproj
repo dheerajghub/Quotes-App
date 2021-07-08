@@ -69,6 +69,8 @@
 		44B1DAB3268DA1CA009101E6 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44B1DAB2268DA1CA009101E6 /* OpenSans-Regular.ttf */; };
 		44B1DAB5268DA29F009101E6 /* times new roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44B1DAB4268DA29F009101E6 /* times new roman.ttf */; };
 		44B1DAB7268DD2BB009101E6 /* CustomAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1DAB6268DD2BB009101E6 /* CustomAnimationView.swift */; };
+		44C193A42695CE7E00FCF6D6 /* ImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C193A32695CE7E00FCF6D6 /* ImagesViewModel.swift */; };
+		44C193A62695D38E00FCF6D6 /* ImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C193A52695D38E00FCF6D6 /* ImagesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +137,8 @@
 		44B1DAB2268DA1CA009101E6 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		44B1DAB4268DA29F009101E6 /* times new roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "times new roman.ttf"; sourceTree = "<group>"; };
 		44B1DAB6268DD2BB009101E6 /* CustomAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationView.swift; sourceTree = "<group>"; };
+		44C193A32695CE7E00FCF6D6 /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
+		44C193A52695D38E00FCF6D6 /* ImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModel.swift; sourceTree = "<group>"; };
 		664A533544D175C8ADCE3FBF /* Pods-Quotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotes.debug.xcconfig"; path = "Target Support Files/Pods-Quotes/Pods-Quotes.debug.xcconfig"; sourceTree = "<group>"; };
 		B90C7208E9902A723013282B /* Pods-Quotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quotes.release.xcconfig"; path = "Target Support Files/Pods-Quotes/Pods-Quotes.release.xcconfig"; sourceTree = "<group>"; };
 		F4D962360FB9B3319DAC8DCE /* Pods_Quotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +222,7 @@
 				447973A7268B3F5000CF78FC /* AuthorsViewModel.swift */,
 				447973A9268B3F6300CF78FC /* QuotesViewModel.swift */,
 				447973AB268B3F7700CF78FC /* TagsViewModel.swift */,
+				44C193A32695CE7E00FCF6D6 /* ImagesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				44797386268B3D8C00CF78FC /* AuthorsModel.swift */,
 				44797388268B3D9E00CF78FC /* QuotesModel.swift */,
 				4479738A268B3DBA00CF78FC /* TagsModel.swift */,
+				44C193A52695D38E00FCF6D6 /* ImagesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -501,6 +507,7 @@
 				4479734E268B3B4A00CF78FC /* QuotesApp.swift in Sources */,
 				44797372268B3C7100CF78FC /* AuthorQuoteListView.swift in Sources */,
 				44B1DA9F268C6499009101E6 /* FontColorView.swift in Sources */,
+				44C193A42695CE7E00FCF6D6 /* ImagesViewModel.swift in Sources */,
 				447973A6268B3F3700CF78FC /* QuotesRealmViewModel.swift in Sources */,
 				447973AA268B3F6300CF78FC /* QuotesViewModel.swift in Sources */,
 				44797395268B3E4F00CF78FC /* FavoriteActionView.swift in Sources */,
@@ -517,6 +524,7 @@
 				4479737C268B3CFD00CF78FC /* HomeView.swift in Sources */,
 				44797385268B3D7600CF78FC /* QuotesDB.swift in Sources */,
 				4479737A268B3CE800CF78FC /* FavouriteView.swift in Sources */,
+				44C193A62695D38E00FCF6D6 /* ImagesModel.swift in Sources */,
 				44797374268B3C8F00CF78FC /* CustomTabView.swift in Sources */,
 				44B1DA94268C43F2009101E6 /* CreatorActionView.swift in Sources */,
 				447973AC268B3F7700CF78FC /* TagsViewModel.swift in Sources */,

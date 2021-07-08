@@ -43,7 +43,7 @@ struct FavouriteView: View {
                                 }
                                 
                                 if isFavouriteActionQuote == quote.quoteId {
-                                    FavoriteActionView(favouriteStateActive: $favouriteStateActive, favouriteViewOpacity: $favouriteViewOpacity, favouriteViewScale: $favouriteViewScale, isQuoteExist: realmModel.checkForQuoteExistence(with: quote.quoteId))
+                                    FavoriteActionView(favouriteStateActive: $favouriteStateActive, favouriteViewOpacity: $favouriteViewOpacity, favouriteViewScale: $favouriteViewScale, isQuoteExist: true)
                                 }
                                 
                                 QuoteCardView(isFavouriteQuote: false, quoteText: quote.content, author: quote.author, authorVisible: true , quoteID: quote.quoteId)

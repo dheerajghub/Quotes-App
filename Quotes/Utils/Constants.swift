@@ -36,6 +36,11 @@ struct Constants {
     static let get_randon_quote_url = "\(base_url)/random"
     static let get_quotes = "\(base_url)/quotes"
     static let get_quotes_for_author = "\(base_url)/quotes?author="
+    static let image_base_url = "https://api.pexels.com/v1/"
+    
+    /// API Key
+    static let pexelsAPIKey = "563492ad6f91700001000001a480f8340ffa417e80b3c4227e88f45e"
+    
     
     /// Custom Font names
     static let fontRegular = "PlayfairDisplay-Regular"
