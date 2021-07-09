@@ -17,7 +17,6 @@ struct HomeView: View {
     
     @ObservedObject var quotesVM = QuotesViewModel()
     @ObservedObject var realmModel = QuoteRealmViewModel()
-    @ObservedObject var imageModel = ImageViewModel()
     
     private var gridItemLayout = [GridItem(.flexible())]
     @State var isCopiedQuote: String = ""
@@ -33,7 +32,6 @@ struct HomeView: View {
     init() {
         UINavigationBar.appearance().titleTextAttributes = [.font : UIFont(name: Constants.fontBlack, size: 20)!]
         self.quotesVM.fetchQuote(for: 1)
-        self.imageModel.fetchImage(for: 1)
     }
     
     // MARK: BODY -

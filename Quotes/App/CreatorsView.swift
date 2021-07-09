@@ -171,7 +171,7 @@ struct CreatorsView: View {
     // MARK: CUSTOM VIEW -
     
     var QuotePostView: some View {
-        HStack {
+        ZStack {
             VStack {
                 Text(quoteContent)
                     .foregroundColor(fontColor)
