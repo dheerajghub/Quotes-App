@@ -69,23 +69,6 @@ struct CustomTabView: View {
                 Text("")
             }
             .tag(2)
-            
-            NavigationView {
-                TestView()
-                .navigationBarTitle(Text("Test View"))
-                .navigationBarTitleDisplayMode(.inline)
-            }
-            .tabItem {
-                if selection == 3 {
-                    Image("favourite-selected")
-                        .renderingMode(.template)
-                } else {
-                    Image("favourite")
-                        .renderingMode(.template)
-                }
-                Text("")
-            }
-            .tag(3)
         }
         .accentColor(colorScheme == .dark ? .white : .black)
     }

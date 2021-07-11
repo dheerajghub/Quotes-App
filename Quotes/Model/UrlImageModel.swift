@@ -16,12 +16,12 @@ class UrlImageModel: ObservableObject {
     
     @Published var image: UIImage?
     
-    init(urlString: String?) {
-        self.urlString = urlString
+    // MARK: METHODS -
+    
+    func getImage( _ url: String ){
+        self.urlString = url
         loadImage()
     }
-    
-    // MARK: METHODS -
     
     func loadImage() {
         if loadImageFromCache() {

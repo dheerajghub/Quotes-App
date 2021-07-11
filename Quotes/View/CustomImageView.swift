@@ -11,23 +11,23 @@ struct CustomImageView: View {
     
     // MARK: PROPERTIES -
     
-    @ObservedObject var urlImageModel: UrlImageModel
+    @ObservedObject var urlImageModel = UrlImageModel()
     
     static var defaultImage = UIImage(named: "logo")
     
     init(urlString: String?) {
-        urlImageModel = UrlImageModel(urlString: urlString)
+        self.urlImageModel.getImage(urlString!)
     }
     
     var body: some View {
         Image(uiImage: urlImageModel.image ?? CustomImageView.defaultImage!)
             .resizable()
-            .scaledToFit()
+            .scaledToFill()
     }
 }
 
-struct CustomImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomImageView(urlString: "")
-    }
-}
+//struct CustomImageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CustomImageView(urlString: "")
+//    }
+//}

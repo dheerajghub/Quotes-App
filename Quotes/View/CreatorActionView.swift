@@ -15,12 +15,16 @@ struct CreatorActionView: View {
     @Binding var fontColor: Color
     @Binding var fontSize: CGFloat
     @Binding var fontName: String
+    @Binding var backgroundImage: UIImage?
+    @Binding var imageCategory: String
+    @Binding var isOpacityButtonAvailable: Bool
     
     @State private var data = [ActionViewData]()
     @State var hidePostBGColorView: Bool = true
     @State var hideFontView: Bool = true
     @State var hideFontColorView: Bool = true
     @State var hideFontSizeView: Bool = true
+    @State var hideImageCategoryView: Bool = true
     @State var hideActionView: Bool = false
     
     // MARK: BODY -
@@ -47,6 +51,11 @@ struct CreatorActionView: View {
                                 if item.toggleView == "FontColorView" {
                                     hideFontColorView.toggle()
                                     hideActionView.toggle()
+                                }
+                                if item.toggleView == "ImageCategoryView" {
+                                    hideImageCategoryView.toggle()
+                                    hideActionView.toggle()
+                                    isOpacityButtonAvailable = true
                                 }
                             } label: {
                                 ActionCardView(data: item)
@@ -78,6 +87,10 @@ struct CreatorActionView: View {
                 FontColorView(fontColor: $fontColor, hideFontColorView: $hideFontColorView , hideActionView: $hideActionView)
             }
             
+            if !hideImageCategoryView {
+                ImageCategoryView(backgroundImage: $backgroundImage, imageCategory: $imageCategory, hideImageCategoryView: $hideImageCategoryView, hideActionView: $hideActionView , isOpacityButtonAvailable: $isOpacityButtonAvailable)
+            }
+            
         }
         .onAppear {
             setData()
@@ -92,6 +105,7 @@ struct CreatorActionView: View {
             ActionViewData(type: "color", image: nil , text: "", color: fontColor, title: "Font Color" , toggleView: "FontColorView"),
             ActionViewData(type: "text", image: nil , text: "\(Int(fontSize))", color: nil, title: "Font Size" , toggleView: "FontSizeView"),
             ActionViewData(type: "text", image: nil , text: "Ag", color: nil, title: "Font", toggleView: "FontView"),
+            ActionViewData(type: "image", image: backgroundImage , text: "", color: nil, title: "BC Image", toggleView: "ImageCategoryView")
         ]
     }
 }

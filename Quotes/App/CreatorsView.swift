@@ -23,11 +23,16 @@ struct CreatorsView: View {
     @State var i = 0
     @State var fontColor: Color = .white
     @State var backgroundColor: Color = .black
+    @State var backgroundImage: UIImage? = nil
+    @State var imageCategory: String = ""
     @State var fontSize: CGFloat = 20
     @State var fontName: String = Constants.fontRegular
     @State var showAuthor: Bool = true
     @State var showingAlert = false
     @State var showLoader: Bool = false
+    @State var bcOpacity: CGFloat = 0.7
+    @State var hideOpacityView:Bool = true
+    @State var isOpacityButtonAvailable: Bool = false
     
     init(quoteContent: String , quoteAuthor: String){
         self.quoteContent = quoteContent
@@ -47,6 +52,37 @@ struct CreatorsView: View {
                             QuotePostView
                         } //: FIRST INNER ZSTACK
                         .frame(width: fixedHeight, height: fixedHeight)
+                        
+                        /// Background Opacity Button View
+                        
+                        ZStack {
+                            Button {
+                                hideOpacityView.toggle()
+                            } label: {
+                                HStack {
+                                    Spacer()
+                                    HStack {
+                                        Image("opacityView")
+                                            .resizable()
+                                            .renderingMode(.template)
+                                            .frame(width: 25, height: 25)
+                                            .foregroundColor(Color.white)
+                                    } //: HSTACK
+                                    .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
+                                    .background(Color.black.opacity(0.5))
+                                    .cornerRadius(22.5)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 22.5)
+                                            .stroke(.white , lineWidth: 1)
+                                    )
+                                    .scaleEffect(isOpacityButtonAvailable ? 1 : 0)
+                                    .animation(.spring() , value: isOpacityButtonAvailable)
+                                }
+                            }
+                        }
+                        .padding(EdgeInsets(top: 15, leading: 15, bottom: 15, trailing: 15))
+                        
+                        /// Post Ratio View
                         
                         ZStack {
                             Button {
@@ -95,13 +131,24 @@ struct CreatorsView: View {
                     VStack {
                       Toggle(isOn: $showAuthor){
                          Text("Show Author")
-                            .font(.custom(Constants.fontBold, size: 16))
+                            .font(.custom(Constants.fontPoppinsRegular, size: 16))
                       }
                     }
                     .padding(EdgeInsets(top: 5, leading: 20, bottom: 5, trailing: 20))
                     
-                    // MARK: ACTION VIEW -
-                    CreatorActionView(backgroundColor: $backgroundColor, fontColor: $fontColor , fontSize: $fontSize, fontName: $fontName)
+                    ZStack {
+                        
+                        // MARK: ACTION VIEW -
+                        CreatorActionView(backgroundColor: $backgroundColor, fontColor: $fontColor , fontSize: $fontSize, fontName: $fontName, backgroundImage: $backgroundImage, imageCategory: $imageCategory , isOpacityButtonAvailable: $isOpacityButtonAvailable)
+                            .background(colorScheme == .dark ? Color.black : Color.white)
+                        
+                        // MARK: BACKGROUND OPACITY VIEW -
+                        if !hideOpacityView {
+                            CustomBCOpacityView(bcOpacity: $bcOpacity, hideOpacityView: $hideOpacityView)
+                                .background(colorScheme == .dark ? Color.black : Color.white)
+                        }
+                        
+                    }
                     
                     
                     Spacer()
@@ -172,6 +219,19 @@ struct CreatorsView: View {
     
     var QuotePostView: some View {
         ZStack {
+            // Background Image view
+            if backgroundImage != nil {
+                ZStack {
+                    Image(uiImage: backgroundImage!)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: calculateWidthRatio(for: fixedHeight - 40, ratio: ratio) > fixedHeight ? fixedHeight - 40 : calculateWidthRatio(for: fixedHeight - 40, ratio: ratio) , height: calculateWidthRatio(for: fixedHeight - 40, ratio: ratio) > fixedHeight ? calculateHeightRatio(for: fixedHeight - 40, ratio: ratio) : fixedHeight - 40)
+                        .clipped()
+                    Rectangle()
+                        .fill(Color.black.opacity(bcOpacity))
+                } //: ZSTACK
+            }
+            
             VStack {
                 Text(quoteContent)
                     .foregroundColor(fontColor)
@@ -184,11 +244,12 @@ struct CreatorsView: View {
                         .font(.custom(fontName, size: (fontSize - 7)))
                         .fixedSize(horizontal: false, vertical: true)
                 }
-            }
+            }//: VSTACK
         }
         .frame(width: calculateWidthRatio(for: fixedHeight - 40, ratio: ratio) > fixedHeight ? fixedHeight - 40 : calculateWidthRatio(for: fixedHeight - 40, ratio: ratio) , height: calculateWidthRatio(for: fixedHeight - 40, ratio: ratio) > fixedHeight ? calculateHeightRatio(for: fixedHeight - 40, ratio: ratio) : fixedHeight - 40)
         .background(backgroundColor)
         .shadow(color: .black.opacity(0.12), radius: 15, x: 0, y: 7)
+        
     }
     
     // MARK: FUNCTIONS -

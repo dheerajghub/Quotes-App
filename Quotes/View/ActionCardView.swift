@@ -21,13 +21,17 @@ struct ActionCardView: View {
                 
                 if data.type == "image" {
                     // IMAGE OPTION
-                    Image(data.image)
+                    Image(uiImage: (data.image ?? UIImage(named: "logo"))!)
                         .resizable()
-                        .renderingMode(.template)
-                        .frame(width: 50, height: 50)
-                        .padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10))
-                        .background(Constants.appSecondary)
+                        .renderingMode(.original)
+                        .scaledToFill()
+                        .frame(width: 70, height: 70)
                         .cornerRadius(35)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 35)
+                                .stroke(Color.white , lineWidth: 2)
+                        )
+                        .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 5)
                 }
                 
                 if data.type == "color" {
@@ -58,7 +62,7 @@ struct ActionCardView: View {
                 
             }
             Text(data.title)
-                .font(.custom(Constants.fontRegular, size: 14))
+                .font(.custom(Constants.fontPoppinsRegular, size: 14))
                 .multilineTextAlignment(.center)
         }
     }
@@ -66,6 +70,6 @@ struct ActionCardView: View {
 
 struct ActionCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ActionCardView(data: ActionViewData(type: "color", image: "", text: "", color: nil , title: "", toggleView: ""))
+        ActionCardView(data: ActionViewData(type: "color", image: nil, text: "", color: nil , title: "", toggleView: ""))
     }
 }

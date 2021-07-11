@@ -38,10 +38,11 @@ struct ImagesContentModel: Decodable , Identifiable {
 
     let id = UUID()
     let original: String
+    let medium: String
     let small: String
     
     enum CodingKeys: String, CodingKey {
-        case original, small
+        case original, medium, small
     }
         
 }

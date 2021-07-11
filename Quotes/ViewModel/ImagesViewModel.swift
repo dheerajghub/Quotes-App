@@ -16,8 +16,8 @@ class ImageViewModel: ObservableObject {
     
     // MARK: METHODS -
     
-    func fetchImage(for page: Int) {
-        guard let url = URL(string: Constants.image_base_url + "curated/?page=\(page)&per_page=15") else { return }
+    func fetchSearchedImage(for page: Int , search query: String) {
+        guard let url = URL(string: Constants.image_base_url + "search/?query=\(query)&page=\(page)") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue(Constants.pexelsAPIKey, forHTTPHeaderField: "Authorization")
