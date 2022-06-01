@@ -3,7 +3,7 @@
 ![platform](https://img.shields.io/badge/platform-iOS-orange?style=flat-square)
 
 ## Quotes
-Quotes App is quotes browsing app which is built with <a href="https://github.com/lukePeavey/quotable">Quotable Free API</a> completely in SwiftUI. You can watch the whole journey of building this app from scratch on my instagram handle <a href="https://www.instagram.com/dheeraj.iosdev ">here</a> , I've tried to break a whole process of building an Full app in some parts there! I hope you enjoy that!
+Quotes App is quotes browsing app which is built with <a href="https://github.com/lukePeavey/quotable">Quotable Free API</a> completely in SwiftUI. You can watch the whole journey of building this app from scratch on my instagram handle <a href="https://www.instagram.com/dheeraj.iosdev ">here</a> , I've tried to break a whole process of building a Full app in some parts there! I hope you enjoy that!
 
 ## My Motivation
 My motivation behind this app is to able learn and able to teach you guys, how to build a full fledge app using SwiftUI especially how to handle Networking using ViewModels and important property wrappers like ObservedObject, Published , StateObject etc. ( Learn more about these <a href="https://www.hackingwithswift.com/quick-start/swiftui/all-swiftui-property-wrappers-explained-and-compared"> here </a> ) This project is for Intermediate iOS developers ( You need to know the basics! ). And I hope this app helps you to build something great!
